@@ -1,0 +1,719 @@
+*{
+    padding: 0 auto;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.w50{
+
+    width: 50%;
+}
+
+.w30{
+
+    width:33,3% ;
+}
+
+.clear{
+
+    clear: both;
+}
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 110px;
+    background-color:#604848;
+}
+
+.booknow{
+    position: relative;
+    left: -15%;
+    bottom:-12px;
+    background-color: #c0d860;
+    height: 80px;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.booknow p {
+    position: relative;
+    top: 20px;
+    left: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.header ul {
+
+    float: right;
+    list-style: none;
+}
+
+.header ul li {
+        background-color:#c0d860;
+        width: 80px;
+        height: 45px;
+        float: left;
+        position: relative;
+        top: -67px;
+        left: -20px;
+        border-top: #607848 solid 6px;
+
+        
+}
+
+.header ul li:hover{
+    background-color:#607848;
+    transition: 0.3s;
+    height: 60px
+}
+
+.header ul li a{
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    left: 5px;
+    top: 5px;
+     
+}
+
+.header ul li a:visited{
+
+    color: black;
+    text-decoration: underline;
+     
+}
+
+.header ul li:first-of-type{
+    border-radius: 0px 0px 0px 15px;
+}
+
+.header ul li:last-of-type {
+
+    border-radius: 0px 0px 15px 0px;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.mainslider {
+    position: relative;
+    margin-top: 115px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/images/banner3.jpg);
+        height: 300px;
+        animation-duration: 10s;
+        animation-name: flowhide;
+        overflow: hidden;
+        animation-iteration-count: infinite;
+    border-radius: 40px;    
+}
+
+@keyframes flowhide{
+
+    0%{
+        background-image: url(/images/banner3.jpg);
+    }
+
+    25% {
+
+        background-image: url(/images/banner2.jpg);
+
+    }
+
+    75%{
+        background-image: url(/images/banner4.jpg);
+
+    }
+    
+    to{
+        background-image: url(/images/banner1.jpg);
+    }
+}
+
+.welcome{
+    width: 100%;
+    background-color: white;
+    min-height: 300px;
+}
+
+.welcome > .welcometitle {
+
+    text-align: left;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-top: 40px;
+
+}
+
+.welcome > .welcomesubtitle {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 200px;
+    margin: 0px;
+    
+}
+
+.mainform{
+
+    background-color:#607848;
+    width: 100%;
+    max-height: 950px;
+    padding-top: 60px;
+    overflow: hidden;
+    
+}
+
+.mainform .calling{
+
+    width: 60%;
+    height: 40px;
+    background-color: #c0d860;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 23px;
+
+}
+
+.calling p{
+    position: relative;
+    left: 26px;
+    display: block;
+}
+
+.conteiner-form {
+    padding-top:60px ;
+    padding-bottom: 60px;
+    position: relative;
+    left: 30%;
+}
+
+.conteiner-form label {
+
+    font-size: 25px;
+    display: block;
+    padding-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.conteiner-form label:nth-of-type(1) {
+
+    position: relative;
+    left: -25%;
+}
+.conteiner-form label:nth-of-type(2) {
+
+    position: relative;
+    left: -25%;
+}
+.conteiner-form label:nth-of-type(3) {
+
+    position: relative;
+    left: -25%;
+}
+
+.conteiner-form label:nth-of-type(4) {
+
+    position: relative;
+    left: 25%;
+    top: -352px;
+}
+
+.conteiner-form label:nth-of-type(5) {
+
+    position: relative;
+    left: 25%;
+    top: -370px;
+}
+
+.conteiner-form label:nth-of-type(6) {
+
+    position: relative;
+    left: 48%;
+    top: -493px;
+}
+
+ #pack {
+
+    position: relative;
+    left: 25%;
+    top: -580px;
+}
+
+#promo {
+
+    position: relative;
+    left: 25%;
+    top: -580px;
+}
+
+
+.conteiner-form input[type="text"]:nth-of-type(1) {
+
+    position: relative;
+    left: -25%;
+}
+.conteiner-form input[type="text"]:nth-of-type(2) {
+
+    position: relative;
+    left: -25%;
+}
+.conteiner-form input[type="text"]:nth-of-type(3) {
+
+    position: relative;
+    left: -25%;
+}
+
+.conteiner-form #double {
+
+    position: relative;
+    left: 36%;
+    top: -444px;
+    border: 0;
+}
+
+.conteiner-form #single {
+
+    position: relative;
+    left: 60%;
+    top: -563px;
+    border: 0;
+}
+
+
+.conteiner-form input[type=text]{
+
+    box-sizing: border-box;
+    border: 0;
+    width: 40%;
+    min-height: 50px;
+    font-size: 25px;
+    background-color: #c0d860;
+    outline: none;
+}
+
+.conteiner-form #roomtype{
+
+    width: 42%;
+    height: 50px;
+    font-size: 25px;
+    background-color: #c0d860;
+    outline: none;
+    position: relative;
+    left:25%;
+    top: -352px;
+    border: 0;
+}
+
+.conteiner-form input::placeholder {
+
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.conteiner-form #promo {
+
+    width: 42%;
+    height: 50px;
+    font-size: 25px;
+    background-color: #c0d860;
+    outline: none;
+    border: 0;
+}
+
+.conteiner-form input[type="number"]{
+
+    width: 7%;
+    height: 50px;
+    font-size: 25px;
+    color: rgba(15, 15, 15,100);
+    background-color: #c0d860;
+    border: 0;
+    outline: none;
+}
+
+
+.conteiner-form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+
+.conteiner-form input[type="submit"] {
+
+    width: 60%;
+    height: 50px;
+    font-size: 25px;
+    background-color: #c0d860;
+    border: 0;
+    position: relative;
+    left: -10%;
+    top: -550px;
+
+}
+
+.conteiner-form #host-number {
+
+    width: 100%;
+    min-height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 25%;
+    top: -363px;
+
+}
+
+.conteiner-form #pack{
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.othercontact{
+
+    width: 95%;
+    min-height: 140px;
+    background-attachment: fixed;
+    background-position: center;
+    background-image:url(/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: -30%;
+    top: -500px;
+    border: #c0d860 3px solid;
+    border-radius: 15px;
+}
+
+.othercontact p { 
+
+    width: 90%;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    color:#c0d860;
+    font-size: 30px;
+}
+
+
+.fcontact p {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    left: -30%;
+    font-size: 30px;
+}
+
+.fcontact ul {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fcontact ul li {
+
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    right:-8%;
+}
+
+.socialmedia{
+
+    padding: 0px;
+}
+
+
+.conteiner-room {
+
+    max-height: 600px;
+}
+
+.mainrooms {
+
+    width: 100%;
+    min-height: 600px;
+    overflow-x: hidden;
+}
+
+.mainrooms h3 {
+
+    position: relative;
+    left: -33%;
+    top: 10px;
+    width: 30%;
+    height: 70px;
+    font-size: 35px;
+    border-bottom: solid black 4px;
+}
+
+
+.standardroom{
+
+    width: 40%;
+    position: relative;
+    right: 25%;
+    top: 100px;
+    text-align: center;
+}
+
+.standardroom p {
+    display: none;
+}
+
+.standardroom:hover {
+
+    background-color: #607848;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.standardroom:hover p {
+    display:inline-block;
+}
+
+.standardroomimg {
+
+    background-image: url(/images/frente1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+    
+}
+
+
+.cottage {
+
+    width: 40%;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    left: 25%;
+    top: -285px;
+}
+
+.cottage p {
+    display: none;
+}
+
+.cottage:hover p {
+    display: inline;
+}
+
+.cottage:hover {
+
+    transition: 0.5s;
+    background-color: #607848;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+
+.cottageimg{
+
+    background-image: url(/images/frente2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 350px;
+}
+
+
+@media screen and (max-width: 900px){
+
+    .header ul li {
+        display: none;
+    }
+
+    .hamburguer{
+        display: inline-block;
+        position: relative;
+        left:85%;
+        bottom:45px;
+        width: 40px;
+    }
+    
+    .fas fa-bars{
+        font-family: 'Font Awesome';
+        font-size: 80px;
+        color: black;
+    }
+
+    .fas {
+
+        color: black;
+    }
+
+    .booknow{
+    position: relative;
+    left: 5%;
+    bottom:-19px;
+    background-color: #738B19;
+    height: 60px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.booknow p {
+    position: relative;
+    top: 15px;
+    left: 1px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.mainform {
+
+    max-height: 1060px
+}
+
+.othercontact {
+
+    height: 300px;
+}
+
+.fcontact {
+
+    top: -518px;
+    border-radius: 0;
+    left: -30%;
+    width: 100%;
+}
+
+.fcontact p {
+
+    position: relative;
+    left: -1%;
+}
+
+.fcontact ul li {
+
+    left: 35%;
+}
+
+.mainform .calling {
+
+    width: 100%;
+}
+
+.conteiner-form label:nth-of-type(5) {
+
+    position: relative;
+    left: 25%;
+    top: -405px;
+}
+
+.conteiner-form label:nth-of-type(6) {
+
+    position: relative;
+    left: 49%;
+    top: -526px;
+}
+
+.conteiner-form #double {
+
+    position: relative;
+    left: 25%;
+    top: -414px;
+
+}
+
+.conteiner-form #single {
+
+    position: relative;
+    left: 50%;
+    top: -535px;
+
+}
+
+#pack {
+
+    top: -560px ;
+}
+
+.conteiner-form input[type="number"]{
+
+    width: 14%;
+
+}
+
+.mainrooms h3 {
+
+    position: relative;
+    left: -1%;
+    top: 10px;
+    border:hidden;
+}
+
+.mainrooms {
+
+    overflow: hidden;
+    width: 100%;
+    min-height: 920px;
+}
+
+
+
+.standardroom {
+
+    width: 100%;
+    left: -1%;
+    top: -10px;
+
+}
+
+.cottage {
+
+    width: 100%;
+    left: -1%;
+    top:  10px;
+}
+
+ }
+@media screen and (max-width: 700px) {
+
+    .fcontact ul li {
+
+        left: 10%;
+    }
+    .fcontact p {
+
+        left: -7%;
+    }
+
+    .othercontact {
+
+        height: 320px;
+    }
+
+    .mainrooms h3 {
+
+        left: -8%;
+    }
+}
+
+
+
+   
+ 
