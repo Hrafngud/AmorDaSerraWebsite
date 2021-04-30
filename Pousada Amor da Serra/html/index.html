@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html  id="htmlBody">
 
     <head>
-        <link href="/style/style.css" rel="stylesheet"> <!--load all styles -->
-        <meta charset="utf-8"/>
         <title>Amor da Serra</title>
-        <meta name="description" content="Amor Da Serra - Paraíso em Lumiar"/>
-        <link href="/style/css/all.css" rel="stylesheet"/>
         <meta property="og:title" content="Amor da Serra - Paraíso em Lumiar" />
         <meta property="og:description" content="Se encante com as belezas naturais da Serra!" />
         <meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png" />
         <meta property="og:url" content="www.amordassera.com.br" />
+        <meta charset="utf-8"/>
+        <meta name="description" content="Amor Da Serra - Paraíso em Lumiar"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+        <link rel="stylesheet" href="flexslider.css" type="text/css">
+        <link href="/style/style.css" rel="stylesheet">
+        <link href="/style/flexslider.css" rel="stylesheet"> <!--load all styles -->
+        <link href="/style/css/all.css" rel="stylesheet"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <script src="/js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+              $('.flexslider').flexslider({
+                  animation: "slide"});
+            });
+          </script>
     </head>
     <body>
         <header>
             <div class="header">
-            <nav class="navbar">
-                <div class="booknow">
-                    <p>RESERVE JÁ!</p>
+            <nav class="navbar" id="hamnav">
+                <!-- [THE HAMBURGER] -->
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
+               
+                <!-- [MENU ITEMS] -->
+                <div id="hamitems">
+                  <a href="#bookingform" id="booknow" class="bs">RESERVE JÁ!</a>
+                  <a href="#rooms"class="bs" >Acomodações</a>
+                  <a href="#about" class="bs" >A Pousada</a>
+                  <a href="#gallery" class="bs">Galeria</a>
+                  <a href="#map" class="bs">Mapas</a>
+                  <a href="#promos" class="bs">Tarifário</a>
                 </div>
-                <ul>
-                    <li> <a href src=""> Pousada</a></li>
-                    <li> <a href src=""> Galeria</a></li>
-                    <li> <a href src=""> Mapas</a></li>
-                    <li> <a href src=""> Tarifario</a></li>
-                    <li> <a href src=""> A Região</a></li>
-                </ul>
-                <a href="" class="hamburguer"><i class="fas fa-bars fa-4x"></i></a>
-            </nav><!--Barra de Navegação-->
-            <div class="clear"></div>
+              </nav>
             </div>
 
         </header><!--Cabeçalho-->
@@ -40,13 +51,13 @@
             <div class="welcome">
                 <h1 class="welcometitle">Seja bem vindo a pousada Amor da Serra!</h1>
                 <h3 class="welcomesubtitle">  Venha conhecer nossa pousada e se deixe encantar pelas belezas naturais da regiao!</h3>
-                <img src="" />
+                
             </div> <!--Texto de boas vindas-->
             
             </section> <!-- Página Principal--> 
         <section id="bookingform">
             <div class="mainform">
-                <div  class="calling"><p>Para concluirmos sua reserva, por favor, preencha o formulario abaixo!</p></div>
+                <div  class="calling bs"><p>VERIFICAR DISPONIBILIDADE</p></div>
                     <div class="conteiner-form"><form id="bform">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Ex: João Silva"><br><br>
@@ -82,11 +93,11 @@
                                 <p>Tel.: (22) 9 8774 - 2554</p>
                                 <br>
                                 <ul class="socialmedia">
-                                    <li><img src="" href=""/><a href=""><i class="fab fa-instagram-square fa-3x"></i></a></li> <!--Face-->
-                                    <li><img src="" href=""/><a href=""><i class="fab fa-facebook-square fa-3x"></i></a></li> <!--Insta-->
-                                    <li><img src="" href=""/><a href=""><i class="fab fa-whatsapp-square fa-3x"></i></a></li> <!--Zap-->
-                                    <li><img src="" href=""/><a href=""><i class="fab fa-airbnb fa-3x"></i></a></li> <!--Telegram-->
-                                    <li><img src="" href=""/><a href=""><i class="fab fa-telegram fa-3x"></i></a></li> <!--Booking-->
+                                    <li><a href=""><i class="fab fa-instagram-square fa-3x"></i></a></li> <!--Face-->
+                                    <li><a href=""><i class="fab fa-facebook-square fa-3x"></i></a></li> <!--Insta-->
+                                    <li><a href=""><i class="fab fa-whatsapp-square fa-3x"></i></a></li> <!--Zap-->
+                                    <li><a href=""><i class="fab fa-airbnb fa-3x"></i></a></li> <!--Telegram-->
+                                    <li><a href=""><i class="fab fa-telegram fa-3x"></i></a></li> <!--Booking-->
                                 </ul> <!--Contatos-->
                             </div> <!--Contatos do Formulário-->
                         </div> <!-- Outro Contato-->
@@ -98,8 +109,8 @@
             </section> <!-- Formulário de Reservas-->
         <section id="rooms">
             <div class="mainrooms">
-                <h3>Acomodações</h3>
-                <div class="conteiner-room">
+                <div class="title-about"><h3 id="acomodation">Acomodações</h3></div>
+                
                     <div class="standardroom">
                         <div class="standardroomimg"></div>
                         <h2 class="stdroom">Quarto</h2>
@@ -109,137 +120,114 @@
                         <div class="cottageimg"></div>
                         <h2 class="cottageroom">Chalé</h2>
                         <p class="cottagedescription">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div> <!--TIpos de Acomodação-->    
+                    </div>  
             </div>
             </section> <!-- Acomodações-->
         <section id="about">
-            <div class="mainabout">
-            <p> A Pousada</p>
-                    <div class="navigation">
-                    <ul>
-                        <li><a href="">Café da Manhã</a></li>
-                        <li><a href="">Restaurante</a></li>
-                        <li><a href="">Sauna</a></li>
-                        <li><a href="">Riacho</a></li>
-                        <li><a href="">A Região</a></li>
-                    </ul>
-                        </div> <!-- Barra de Navegação-->
-                    <div class="boxabout">
-                <img src=""/>
-                <br>
-                <p></p>
-                        </div> <!-- Características da Pousada Café da Manhã-->
-                    <div class="boxabout">
-                <h3>Café da Manhã</h3>
-                <img src=""/>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
-                        </div> <!-- Características da Pousada Restaurante-->
-                    <div class="boxaboutright">
-            <h3>Sauna</h3>
-            <img src=""/>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
-                        </div> <!-- Características da Pousada Alinhado a direita RIacho-->
-<br>
-        <h2>Insira um lance legal de marketing aqui</h2>
-<br>
-                    <div class="boxaboutleft">
-        <h3>Riacho</h3>
-        <img src=""/>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
-                        </div> <!-- Características da Pousada alinhado a esquerda Sauna-->
-                        <div class="boxabout">
-                            <h3>Restaurante</h3>
-                            <img src=""/>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
-                            </div> <!--Características sobre a pousada A Região-->    
-    </div> <!-- Sobre a Pousada-->
-
+            <div class="conteiner-about">
+                <div class="title-about" > <h3 id="abouttitle">A Pousada</h3></div>
+             <!--Titulo-->
+            <div class="breakfast aboutbox">
+                <div class="breakfastimg"></div>
+                <h3 class="boxsubtitle">Café da Manhã</h3>
+                <p class="boxdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
+            </div>   <!-- Box Café da Manhã-->
+            <div class="restaurant aboutbox">
+                <div class="restaurantimg"></div>
+                <h3 class="boxsubtitle">Restaurante</h3>
+                <p class="boxdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
+            </div><!--Box Restaurante-->
+            <div class="sauna aboutbox">
+                <div class="saunaimg"></div>
+                <h3 class="boxsubtitle">Sauna</h3>
+                <p class="boxdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
+            </div><!-- Box Sauna-->
+            <div class="river aboutbox">
+                <div class="riverimg"></div>
+                <h3 class="boxsubtitle">Riacho</h3>
+                <p class="boxdescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor est quae accusamus odit laborum saepe tempora sunt natus suscipit sit, ad ipsum tempore vero fugit excepturi earum eligendi exercitationem?</p>
+            </div><!-- Box Riacho-->
+        </div> <!--Conteiner Principal Sobre-->
             </section> <!--Informações sobre a pousada-->
         <section id="gallery">
-            <h3>Galeria</h3>
-            <div class="gallerymain">
-                <div class="mainhalleryimage">
-                <img src=""/>
-                </div>
-                <div class="areaname">
-                <h3>Nome do Local Dinamico</h3>
-                </div>
-                <br>
-                <div class="localdescription">
-                    <p>Descrição do local dinâmica lorem ipsum novinha amet</p>
-                </div>
-                <div class="imagerow">
-                    <img src=""/>
-                </div>
-                <div class="buttongallerylft">
-                    <img src=""/>
-                </div>
-                <div class="buttongaleryrgt"/>
-                    <img src=""/>
-                </div>
+            <div class="conteiner-gallery">
+
+                <div class="title-about"><h3>Galeria</h3></div>
+            <div class="flexslider">
+                <ul class="slides">
+                        <li>
+                                <img src="/images/slider1.jpg" />
+                                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                        </li>
+                        <li>
+                                <img src="/images/slider2.jpg" />
+                                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                        </li>
+                        <li>
+                                <img src="/images/slider3.jpg" />
+                                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                        </li>
+                        <li>
+                                <img src="/images/slider4.jpg" />
+                                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                        </li>
+                        <li>
+                                <img src="/images/slider5.jpg" />
+                                <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+                        </li>
+                    </ul>
+        </div> <!-- Slider-->
+
+        </div> <!--Conteiner Principal Galeria -->
 
         </section>   <!--Galeria com imagens de todas as partes da pousada e acomodações-->
         <section id="map">
             <div class="mapmain">
-                <h3>Como Chegar</h3>
-                <div class="mapbox">
-                    <p>Rota 1</p>
-                    <img src=""/>
+                <div class="title-about" id="howtomap"><h3>Como Chegar</h3></div>
+                <div class="conteiner-map">
+                <div class="mapbox" id="box1">
+                    <p>ROTA 1</p>
+
                 </div>
-                <div class="mapbox">
-                    <p>Rota 2</p>
-                    <img src=""/>
+                <div class="mapbox" id="box2">
+                    <p>ROTA 2</p>
+
                 </div>
-                <div class="mapbox">
-                    <p>Rota 3</p>
-                    <img src=""/>
+                <div class="mapbox" id="box3">
+                    <p>ROTA 3</p>
+
                 </div>
+            </div><!-- Conteiner principal dos mapas-->
             </div> <!-- bg dos mapas-->
         </section> <!--Mapa exibindo rotas para chegar a pousada-->
-        <section id="packs">
-            <div class="packsmain">
-                <h3>Tarifário</h3>
-                <div class="packsbox">
-                    <div class="dynamicpackname">
-                        <p>Nome do pacote</p>
-                    </div>
-                    <div class="dynamicpackimage">
-                        <img src=""/>
-                    </div>
-                </div> <!--Box Tarifário Dinâmica-->
-                <div class="packsbox">
-                    <div class="dynamicpackname">
-                        <p>Nome Do Pacote</p>
-                    </div>
-                    <div class="dynamicpackimage">
-                        <img src=""/>
-                    </div>
-                </div> <!--Box Tarifário Dinâmica-->
-                <div class="packsbox">
-                    <div class="dynamicpackname">
-                        <p>Nome Do Pacote</p>
-                    </div>
-                    <div class="dynamicpackimage">
-                        <img src=""/>
-                    </div>
-                </div> <!--Box Tarifário Dinâmica-->
-            </div> <!-- bg do tarifário-->
+        <section id="promos">
+            <div class="title-about"><h3>Tarifário</h3></div>
+            <div class="conteiner-promo">
+
+                <div class="promobox" id="box4">
+                    <p>NATAL</p>
+                    
+                </div>
+                <div class="promobox" id="box5">
+                    <p>ANO NOVO</p>
+
+                </div>
+                <div class="promobox" id="box6">
+                    <p>FÉRIAS DE JANEIRO</p>
+                </div>
+            </div> <!--Conteiner Tarifário-->
         </section> <!-- Tarifário mostrando as promoções válidas-->
 
-        <footer>
+        <footer id="footer">
             <div class="bgfooter">
-                <p><a href="">Politica de Privacidade</a></p>
-                <p>TERRAMAR 2021 - Todos os Direitos Reservados</p>
-                <p>(22) 9 8774 - 2554 
-                    <br>
-                    R. Sete de Setembro, Lumiar, Nova Friburgo - RJ</p>
-            </div>
+                <span id="privacity"><a href="">Politica de Privacidade</a>
+                </span>
+                <p id="terramar">TERRAMAR 2021 - Todos os Direitos Reservados</p>
+                <p id="ournumber">(22) 9 8774 - 2554 </p>
+                <p id="address">R. Sete de Setembro, Lumiar, Nova Friburgo - RJ</p>
+        </div><!--background do rodapé-->
         </footer> <!--Rodapé-->
-        <script src="/js/jquery.js"></script>
+        <script src="/js/functions.js"></script>
+         
     </body>
 </html>
