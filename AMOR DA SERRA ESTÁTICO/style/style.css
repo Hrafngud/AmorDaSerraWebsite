@@ -6,7 +6,8 @@
 
 
 :root {
-    --primary-color: red;
+    --primary-color:red;
+    
   }
 
 .bs {
@@ -30,7 +31,7 @@
   }
   
   /* Hide Hamburger */
-  #hamnav label, #hamburger { display: none; }
+  #hamnav label, #hamburger { display: none; cursor: pointer;}
   
   /* Horizontal Menu Items */
   #hamitems { display: flex; }
@@ -45,11 +46,14 @@
     border-radius: 10px;
     border: 4px solid #607848;
     background-color: rgba(96, 120, 72, 30%);
+    box-shadow: #64a034df 3px 3px 5px;
   }
   #hamitems a:hover {
     transition: 0.3s;
     border:4px solid #c0d860;
     background-color: rgba(96, 120, 72, 100%);
+    box-shadow: #b3f031df 3px 3px 5px;
+    color:#c0d860;
   }
 
 .mainslider {
@@ -113,228 +117,6 @@
     
 }
 
-.mainform{
-
-    background-color:#607848;
-    width: 100%;
-    max-height: 950px;
-    padding-top: 60px;
-    overflow: hidden;
-    
-}
-
-.mainform .calling{
-
-    width: 30%;
-    height: 40px;
-    background-color: #c0d860;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    border-radius: 15px;
-    text-align: left;
-    font-size: 23px;
-
-}
-
-.calling p{
-    position: relative;
-    left: 45px;
-    display: block;
-    
-}
-
-.conteiner-form {
-    padding-top:60px ;
-    padding-bottom: 60px;
-    position: relative;
-    left: 30%;
-}
-
-.conteiner-form label {
-
-    font-size: 25px;
-    display: block;
-    padding-bottom: 20px;
-    font-weight: bold;
-    position: relative;
-}
-
-.conteiner-form label:nth-of-type(1) {
-
-    position: relative;
-    left: -25%;
-}
-.conteiner-form label:nth-of-type(2) {
-
-    position: relative;
-    left: -25%;
-}
-.conteiner-form label:nth-of-type(3) {
-
-    position: relative;
-    left: -25%;
-}
-
-.conteiner-form label:nth-of-type(4) {
-
-    position: relative;
-    left: 25%;
-    top: -367px;
-}
-
-.conteiner-form label:nth-of-type(5) {
-
-    position: relative;
-    left: 25%;
-    top: -410px;
-}
-
-.conteiner-form label:nth-of-type(6) {
-
-    position: relative;
-    left: 48%;
-    top: -535px;
-}
-
- #pack {
-
-    position: relative;
-    left: 25%;
-    top: -605px;
-}
-
-#promo {
-
-    position: relative;
-    left: 25%;
-    top: -610px;
-}
-
-
-.conteiner-form input[type="text"]:nth-of-type(1) {
-
-    position: relative;
-    left: -25%;
-}
-.conteiner-form input[type="text"]:nth-of-type(2) {
-
-    position: relative;
-    left: -25%;
-}
-.conteiner-form input[type="text"]:nth-of-type(3) {
-
-    position: relative;
-    left: -25%;
-}
-
-.conteiner-form #double {
-
-    position: relative;
-    left: 36%;
-    top: -460px;
-    border: 0;
-}
-
-.conteiner-form #single {
-
-    position: relative;
-    left: 60%;
-    top: -583px;
-    border: 0;
-}
-
-
-.conteiner-form input[type=text]{
-
-    box-sizing: border-box;
-    border: 0;
-    width: 40%;
-    min-height: 50px;
-    font-size: 25px;
-    background-color: #c0d860;
-    outline: none;
-}
-
-.conteiner-form #roomtype{
-
-    width: 42%;
-    height: 50px;
-    font-size: 25px;
-    background-color: #c0d860;
-    outline: none;
-    position: relative;
-    left:25%;
-    top: -367px;
-    border: 0;
-}
-
-.conteiner-form input::placeholder {
-
-    padding-left: 30px;
-    box-sizing: border-box;
-}
-
-.conteiner-form #promo {
-
-    width: 42%;
-    height: 50px;
-    font-size: 25px;
-    background-color: #c0d860;
-    outline: none;
-    border: 0;
-}
-
-.conteiner-form input[type="number"]{
-
-    width: 7%;
-    height: 50px;
-    font-size: 25px;
-    color: rgba(15, 15, 15,100);
-    background-color: #c0d860;
-    border: 0;
-    outline: none;
-}
-
-
-.conteiner-form input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-
-}
-
-.conteiner-form input[type="submit"] {
-
-    width: 60%;
-    height: 50px;
-    font-size: 25px;
-    background-color: #c0d860;
-    border: 0;
-    position: relative;
-    left: -10%;
-    top: -550px;
-
-}
-
-.conteiner-form #host-number {
-
-    width: 100%;
-    min-height: 40px;
-    font-size: 25px;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    position: relative;
-    left: 25%;
-    top: -372px;
-
-}
-
-.conteiner-form #pack{
-
-    font-size: 25px;
-    font-weight: bold;
-}
-
 .othercontact{
 
     width: 95%;
@@ -356,16 +138,18 @@ input::-webkit-inner-spin-button {
 }
 
 
-.fcontact p {
+.fcontact #phone {
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    left: 3%;
+    position: relative;
+    left: 24%;
+    top: -90px;
     font-size: 30px;
+    width: 400px;
+    padding: 0;
 }
 
 .fcontact ul {
-
+    
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -375,7 +159,9 @@ input::-webkit-inner-spin-button {
     display: inline-block;
     list-style: none;
     position: relative;
-    right:-8%;
+    left:60%;
+    top: -80px;
+    
 }
 .fcontact a:visited {
 
@@ -386,7 +172,6 @@ input::-webkit-inner-spin-button {
 
     padding: 0px;
 }
-
 
 .mainrooms {
 
@@ -879,10 +664,10 @@ input::-webkit-inner-spin-button {
 }
 #hamnav label { 
     display: inline-block; 
-    color: white;
+    color: #607848;
     background: #604848;
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 50px;
     width: 200%;
     padding: 10px;
     text-align: left;
@@ -898,95 +683,26 @@ input::-webkit-inner-spin-button {
     
     /* Toggle Show/Hide Menu */
     #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block;  }
+    #hamnav input:checked ~ #hamitems { display: block; }
 
 .mainslider{
-    margin-top: 30px;
-}
-
-.mainform {
-
-    max-height: 1060px;
-}
-
-.othercontact {
-
-    height: 300px;
-}
-
-.fcontact {
-
-    top: -518px;
-    border-radius: 0;
-    left: -30%;
+    margin-top: 70px;
     width: 100%;
+    max-width: 100%;
 }
 
-.fcontact p {
+.fcontact #phone {
 
-    position: relative;
-    left: -1%;
+    left: 1%;
+    top: 120px;
+    width: 366px;
 }
 
 .fcontact ul li {
-
-    left: 35%;
-}
-
-.othercontact p {
-
-        text-align: center;
-    }
-
-.mainform .calling {
-
-    width: 100%;
-}
-
-.conteiner-form label:nth-of-type(5) {
-
-    position: relative;
-    left: 25%;
-    top: -405px;
-}
-
-.conteiner-form label:nth-of-type(6) {
-
-    position: relative;
-    left: 49%;
-    top: -526px;
-}
-
-.conteiner-form #double {
-
-    position: relative;
-    left: 25%;
-    top: -414px;
-
-}
-
-.conteiner-form #single {
-
-    position: relative;
-    left: 50%;
-    top: -535px;
-
-}
-
-#pack {
-
-    top: -575px ;
-}
-
-#promo {
-
-    top: -590px;
-}
-
-.conteiner-form input[type="number"]{
-
-    width: 14%;
-
+    
+    left: 5%;
+    top: -20px;
+    
 }
 
 .mainrooms {
@@ -1005,7 +721,7 @@ input::-webkit-inner-spin-button {
 
 .standardroom {
 
-    width: 100%;
+    width: 85%;
     left: -1%;
     top: -10px;
 
@@ -1013,7 +729,7 @@ input::-webkit-inner-spin-button {
 
 .cottage {
 
-    width: 100%;
+    width: 85%;
     left: -1%;
     top:  10px;
 }
@@ -1040,14 +756,14 @@ input::-webkit-inner-spin-button {
 .title-about {
 
     width: 100%;
-    left: -7%;
+    left: 1%;
     border: none;
     text-align: center;
 }
 
 .breakfast {
 
-    width: 100%;
+    width: 85%;
     left: 1%;
     top: 90px;
 
@@ -1055,7 +771,7 @@ input::-webkit-inner-spin-button {
 
 .restaurant {
 
-    width: 100%;
+    width: 85%;
     left: 1%;
     top: 150px;
 
@@ -1063,7 +779,7 @@ input::-webkit-inner-spin-button {
 
 .sauna {
 
-    width: 100%;
+    width: 85%;
     left: 1%;
     top: 215px;
 
@@ -1071,9 +787,14 @@ input::-webkit-inner-spin-button {
 
 .river {
 
-    width: 100%;
+    width: 85%;
     left: 1%;
     top: 290px;
+}
+
+.slides ul li {
+
+    min-width: 100%;
 }
 
 .conteiner-map {
@@ -1164,66 +885,9 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 700px) {
 
-
-    .mainform {
-
-        max-height: 1100px;
-    }
-    .fcontact ul li {
-        top: -40px;
-        left: 10%;
-    }
-    .fcontact p {
-
-        left: -7%;
-    }
-
-    .othercontact {
-
-        height: 320px;
-    }
-    .othercontact p {
-
-        text-align: center;
-    }
-
-    .mainrooms h3 {
+.mainrooms h3 {
 
         left: -8%;
-    }
-
-    #promo {
-
-        top: -500px ;
-        left: -25%;
-    }
-
-    #pack {
-
-        margin-top: 30px;
-        top: -490px ;
-        left: -25%;
-    }
-
-    .conteiner-form input[type="submit"] {
-
-        top: -480px;
-        margin-bottom: 60px;
-    }
-
-    
-    .conteiner-form label:nth-of-type(6) {
-    
-        position: relative;
-        left: 25%;
-        top: -418px;
-    }
-
-    .conteiner-form  #single {
-
-         position: relative;
-        left: 25%;
-        top: -418px;
     }
 
 
